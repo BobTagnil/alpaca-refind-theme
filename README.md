@@ -1,3 +1,5 @@
+# THIS IS A DRAFT
+
 ## Minimalistic rEFInd theme
 
 [rEFInd](http://www.rodsbooks.com/refind/) is an easy to use boot manager for UEFI
@@ -50,6 +52,21 @@ high quality wallpaper][wallpaper], resize it as appropriate, and replace the
 
 You can of course also choose your own background!
 
+### Windows support
+
+To take splash from firmware when windows is loading 
+
+```
+use_graphics_for + windows
+```
+
+To ignore recovery entries and systemmd for POP OS
+
+```
+dont_scan_dirs EFI/Microsoft/Recovery,EFI/systemd
+```
+
+
 ### Attribution
 
 The OS icons are from [Lightness for burg][icons] by [SWOriginal][icon-author].
@@ -64,3 +81,4 @@ it!
 [padster]: https://github.com/theRealPadster
 [wallpaper]: http://leonardoalanb.deviantart.com/art/Minimalist-wallpaper-295519786
 [wallpaper-author]: http://leonardoalanb.deviantart.com/
+
